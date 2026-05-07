@@ -8,8 +8,12 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :relative_assets
-set :base_url, "/eu-lari-festa/"
+configure :build do
+  activate :relative_assets
+  set :relative_links, true
+end
+
+set :base_url, "/"
 
 
 # Layouts
@@ -53,10 +57,6 @@ page '/*.txt', layout: false
 # end
 
 # config.rb
-configure :build do
-  activate :relative_assets
-  set :relative_links, true
-end
 
 activate :i18n, locales: [:'pt-br'], mount_at_root: :'pt-br'
 
