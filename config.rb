@@ -52,6 +52,8 @@ page '/*.txt', layout: false
 #   activate :minify_javascript, compressor: Terser.new
 # end
 
+activate :i18n, locales: [:'pt-br'], mount_at_root: :'pt-br'
+
 require 'dotenv/load'
 require 'rqrcode'
 

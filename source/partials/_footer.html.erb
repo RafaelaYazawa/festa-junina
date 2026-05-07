@@ -1,11 +1,21 @@
+<% event_date = I18n.l(
+   Time.new(
+      data.event.date.year, 
+      data.event.date.month, 
+      data.event.date.day
+   ), 
+   format: :long) 
+%>
+
+
 <div id="footer">
    <div class="footer-content">
       <div class="about">
-         <h3>21ª Festa Junina Beneficente da Igreja Católica</h3>
+         <h3><%= data.event.edition %>ª Festa Junina Beneficente da Igreja Católica</h3>
          <div class="icons grid">
             <div class="icon area-1">
                <i class="fa-solid fa-calendar fa-lg"></i>
-               <p>28 de Junho de 2026</p>
+               <p><%= event_date %></p>
             </div>
          <div class="icon area-2">
                <i class="fa-solid fa-clock fa-lg"></i>
@@ -13,7 +23,7 @@
          </div>
             <div class="icon area-3">
                <i class="fa-solid fa-location-dot fa-lg"></i>
-               <p>Estádio de Toyota</p>
+               <p><%= data.event.venue %></p>
          </div>
          </div>
       </div>

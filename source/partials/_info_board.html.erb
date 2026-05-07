@@ -1,3 +1,5 @@
+<% event_date = I18n.l(Time.new(2026, 6, 28), format: :long) %>
+
 <div class="quadro-avisos">
   <div class="board">
       <div class="post-it-wrapper">
@@ -6,7 +8,19 @@
                <i class="fa-solid fa-circle pin" style="color: #ab0d0d;"></i>
                <div class="info-content">
                   <h3><%= info.name class: "info-title" %></h3>
-                  <p><%= info.description class: 'info-body' %></p>
+                  <p class="info-body">
+                     <%= (info.description % {
+                        edition: data.event.edition,
+                        date: I18n.l(
+                           Time.new(
+                              data.event.date.year, 
+                              data.event.date.month, 
+                              data.event.date.day
+                           ),
+                           format: :long
+                        )
+                     }).html_safe %>
+                  </p>
                </div>
             </div>
          <% end %>
