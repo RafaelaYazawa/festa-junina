@@ -1,0 +1,115 @@
+.prize-card {
+  margin: 20px;
+  position: relative;
+  width: 310px;
+  height: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px #0000001a;
+  transition: transform 0.3s ease; }
+
+.prize-card:hover {
+  transform: translateY(-5px); }
+
+.prize-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; }
+
+.prize-content {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #000000b3;
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: height 0.4s ease;
+  height: 45px;
+  overflow: hidden; }
+
+.prize-card:hover .prize-content {
+  height: 32%;
+  /* Expands to show paragraph on hover */ }
+
+.prize-name {
+  margin: 0 0 1px 0;
+  font-size: 1.2rem; }
+
+.prize-description {
+  margin: 0;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.1s;
+  /* Slight delay for better effect */ }
+
+.prize-card:hover .prize-description {
+  opacity: 1; }
+
+.img-ilustration-p {
+  padding: 10px 0; }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .card {
+    padding: 0px;
+    border-radius: 16px;
+    width: 100%;
+    margin: 0px; }
+  .prize-img {
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+  .prize-card {
+    margin: 15px auto;
+    width: 100%; }
+  .prize-card:hover .prize-content {
+    height: 30%; }
+  .prize-content {
+    height: 45px; }
+  .prize-text {
+    text-align: center;
+    margin: 7px 0px;
+    font-size: 19px; } }
+
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .prize-card {
+    width: 365px;
+    height: 255px; } }
+
+@media screen and (max-width: 320px) {
+  .prize-img {
+    width: 100%;
+    height: 100%;
+    margin: 0; } }
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .card {
+    padding: 0px;
+    border-radius: 16px;
+    width: 100%;
+    margin: 0px; }
+  .prize-img {
+    width: 100%;
+    height: 100%;
+    margin: 0; }
+  .prize-card {
+    margin: 15px auto;
+    width: 100%; }
+  .prize-card:hover .prize-content {
+    height: 30%; }
+  .prize-content {
+    height: 45px; }
+  .prize-text {
+    text-align: center;
+    margin: 7px 0px;
+    font-size: 19px; } }
+
+@media screen and (min-width: 1024px) {
+  .prize-card {
+    width: 280px;
+    height: 215px; } }
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .prize-card {
+    width: 90%; } }

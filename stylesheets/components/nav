@@ -1,0 +1,184 @@
+.nav-orange {
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  padding: 0.7rem 5rem;
+  background-color: #ffa500;
+  margin: 0px auto; }
+  .nav-orange h3 {
+    font-size: 24px;
+    margin: 0px; }
+  .nav-orange .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+  .nav-orange .nav-links {
+    margin-left: auto; }
+
+.link-list {
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  padding: 0px;
+  margin: 1.125rem 0 0 0;
+  padding-bottom: 8px; }
+
+.hamburguer-icon {
+  display: none; }
+
+.link-list li a {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #262626;
+  font-family: sans-serif;
+  transition: 0.5s;
+  z-index: 1; }
+
+.link-list li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  border-top: 2px solid #262626;
+  border-bottom: 2px solid #262626;
+  transform: scaleY(1);
+  opacity: 0;
+  transition: 0.3s; }
+
+.link-list li a::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: #006400;
+  transform: scale(1);
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -1; }
+
+.link-list li a:hover {
+  color: #fff; }
+
+.link-list li a:hover::before {
+  transform: scaleY(1.3);
+  opacity: 1; }
+
+.link-list li a:hover::after {
+  transform: scaleY(1.3);
+  opacity: 1; }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .nav-orange {
+    z-index: 3;
+    padding: 1rem 1.5rem; }
+    .nav-orange h3 {
+      max-width: 90%;
+      padding-right: 0.5rem; }
+  .nav-links.show {
+    top: 60px; } }
+
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .nav-orange {
+    z-index: 3;
+    padding: 1rem; }
+    .nav-orange h3 {
+      max-width: 100%; }
+  .nav-links.show {
+    top: 50px; } }
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .nav-orange {
+    flex-direction: column;
+    align-items: flex-start; }
+    .nav-orange h3 {
+      font-size: 16px; }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto; }
+  .hamburguer-icon {
+    display: block;
+    align-items: flex-end;
+    font-size: 14px; }
+  .nav-links {
+    display: none; }
+  .nav-links.show {
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background: #ffa500; }
+  .link-list {
+    flex-direction: column;
+    margin: 5px 0px; }
+  .pages-links {
+    font-size: 15px; }
+  .link-list li a:hover {
+    color: #fff; }
+  .link-list li a::before {
+    display: none; }
+  .link-list li a::after {
+    display: none; } }
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .nav-orange {
+    z-index: 3;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start; }
+    .nav-orange h3 {
+      font-size: 17px;
+      max-width: 100%;
+      margin: 0 25px; }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto; }
+  .hamburguer-icon {
+    display: block;
+    align-items: flex-end;
+    font-size: 17px;
+    margin: 0px 25px; }
+  .nav-links {
+    display: none; }
+  .nav-links.show {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    background: #ffa500; }
+  .link-list {
+    flex-direction: column;
+    margin: 5px 0px; }
+  .pages-links {
+    font-size: 15px; }
+  .link-list li a:hover {
+    color: #fff; }
+  .link-list li a::before {
+    display: none; }
+  .link-list li a::after {
+    display: none; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .nav-orange {
+    padding: 0.7rem 2.3rem; }
+    .nav-orange .wrapper {
+      align-items: baseline; }
+  .wrapper h3 {
+    font-size: 18px; }
+  .link-list li a {
+    padding: 10px 8px;
+    font-size: 15px; } }
