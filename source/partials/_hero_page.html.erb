@@ -1,11 +1,19 @@
+<% event_date = I18n.l(
+  Time.new(
+    data.event.date.year, 
+    data.event.date.month, 
+    data.event.date.day), 
+  format: :default
+) %>
+
 <div id="hero-page">
   <div class="intro">
-    <h1>21ª Festa Junina Beneficente</h1>
+    <h1><%= data.event.edition %>ª Festa Junina Beneficente</h1>
     <h3>Comunidade Católica de Toyota</h3>
   </div>
 
   <div class="intro-text">
-    <p> Venha celebrar conosco a 21ª Festa Junina Beneficente da Comunidade Católica de Toyota! 🌽🎶 No dia 28 de Junho, prepare-se para um dia inesquecível, cheia de música, dança, comidas típicas e muita diversão! Teremos barracas com delícias tradicionais, brincadeiras para todas as idades e, claro, o famoso bingo com prêmios incríveis! Traga sua família e amigos para vivenciar essa linda tradição brasileira em um ambiente acolhedor e festivo. Não perca essa grande festa! Esperamos por você! 🎉🔥</p>
+    <p> Venha celebrar conosco a <%= data.event.edition %>ª Festa Junina Beneficente da Comunidade Católica de Toyota! 🌽🎶 No dia <%= event_date %>, prepare-se para um dia inesquecível, cheia de música, dança, comidas típicas e muita diversão! Teremos barracas com delícias tradicionais, brincadeiras para todas as idades e, claro, o famoso bingo com prêmios incríveis! Traga sua família e amigos para vivenciar essa linda tradição brasileira em um ambiente acolhedor e festivo. Não perca essa grande festa! Esperamos por você! 🎉🔥</p>
 
     <%= image_tag "stadium.png", class: 'stadium-img', alt: 'Foto do Estádio de Toyota' %>
   </div>

@@ -1,5 +1,5 @@
 - name: "Data do Evento"
-  description: "A 21ª Festa Junina Beneficente ocorrerá em <strong> 28 de Junho de 2026 </strong>. Marquem seus calendários!"
+  description: "A %{edition}ª Festa Junina Beneficente ocorrerá em <strong>%{date}</strong>. Marquem seus calendários!"
   color: "yellow"
 - name: "Estacionamento"
   description: "Haverá vagas gratuitas disponíveis no estádio e em seus arredores."
