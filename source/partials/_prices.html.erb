@@ -5,7 +5,7 @@
          <div class="food-container">
             <div class="food-content">
                <h4 class="food-name-price"><%= food.food %></h4>
-               <h4 class="food-name-price"><%= food.price %></h4>
+             <h4 class="food-name-price"><%= food.price == "pending" ? "Preço a definir" : food.price %></h4>
             </div>
          </div>
       </div>
