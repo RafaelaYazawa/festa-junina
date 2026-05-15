@@ -64,6 +64,8 @@
       image: "brands/ueno-taekwondo.jpeg"
     # - name: "Universidade Paulista (Polo Japão) - Logo"
     #   image: "brands/unip.jpeg"
+    - name: "Witplus - Logo"
+      image: "brands/witplus.jpg"
     - name: "World Insurance (Corretora de Seguros) - Logo"
       image: "brands/world-insurance.jpeg"
     - name: "Yamada Fudosan (A sua Imobiliária no Japão) - Logo "
